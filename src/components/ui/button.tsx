@@ -15,11 +15,17 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Futuristic variants
+        neon: "bg-primary text-primary-foreground glow-blue hover:scale-105 transform transition-all duration-300 hover:glow-purple",
+        glass: "glass text-foreground hover:scale-105 transform transition-all duration-300 hover:glow-blue",
+        scan: "bg-accent text-accent-foreground relative overflow-hidden hover:scale-105 transform transition-all duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent before:translate-x-[-100%] hover:before:animate-scan",
+        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground text-lg px-8 py-4 glow-blue hover:glow-purple hover:scale-105 transform transition-all duration-500 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-12 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },
