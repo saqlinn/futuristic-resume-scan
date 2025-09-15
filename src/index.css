@@ -2,69 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ResumeAI Futuristic Design System - All colors in HSL */
+/* Professional Web Design System - All colors in HSL */
 
 @layer base {
   :root {
-    /* Dark space theme - default */
-    --background: 220 25% 6%;
-    --foreground: 210 50% 98%;
+    /* Professional dark theme */
+    --background: 222 20% 11%;
+    --foreground: 210 40% 98%;
 
-    /* Glass morphism cards */
-    --card: 220 25% 8%;
-    --card-foreground: 210 50% 98%;
+    /* Clean cards */
+    --card: 222 15% 16%;
+    --card-foreground: 210 40% 98%;
 
     /* Popover styling */
-    --popover: 220 25% 8%;
-    --popover-foreground: 210 50% 98%;
+    --popover: 222 15% 16%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Electric blue primary */
-    --primary: 217 91% 60%;
-    --primary-foreground: 220 25% 6%;
+    /* Professional blue primary */
+    --primary: 210 100% 56%;
+    --primary-foreground: 222 20% 11%;
 
-    /* Purple secondary */
-    --secondary: 270 50% 25%;
-    --secondary-foreground: 210 50% 98%;
+    /* Subtle secondary */
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 40% 98%;
 
     /* Muted elements */
-    --muted: 220 25% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Neon green accent */
-    --accent: 120 80% 50%;
-    --accent-foreground: 220 25% 6%;
+    /* Professional accent */
+    --accent: 142 71% 45%;
+    --accent-foreground: 222 20% 11%;
 
     /* Destructive red */
-    --destructive: 0 85% 60%;
-    --destructive-foreground: 210 50% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
 
-    /* Borders and inputs */
-    --border: 220 25% 20%;
-    --input: 220 25% 12%;
-    --ring: 217 91% 60%;
+    /* Clean borders and inputs */
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 210 100% 56%;
 
-    /* Custom futuristic variables */
-    --neon-blue: 217 91% 60%;
-    --neon-green: 120 80% 50%;
-    --neon-purple: 270 100% 70%;
-    --electric-cyan: 180 100% 70%;
+    /* Professional design variables */
+    --professional-blue: 210 100% 56%;
+    --professional-green: 142 71% 45%;
+    --professional-gray: 215 16% 47%;
+    --soft-blue: 213 100% 72%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(270 100% 70%));
-    --gradient-secondary: linear-gradient(45deg, hsl(120 80% 50%), hsl(180 100% 70%));
-    --gradient-bg: linear-gradient(135deg, hsl(220 25% 6%), hsl(270 50% 8%));
-    --gradient-glass: linear-gradient(135deg, hsl(220 25% 8% / 0.3), hsl(270 50% 15% / 0.2));
+    /* Clean gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 56%), hsl(213 100% 72%));
+    --gradient-secondary: linear-gradient(45deg, hsl(142 71% 45%), hsl(156 73% 59%));
+    --gradient-bg: linear-gradient(135deg, hsl(222 20% 11%), hsl(215 25% 16%));
+    --gradient-glass: linear-gradient(135deg, hsl(222 15% 16% / 0.4), hsl(215 25% 27% / 0.2));
     
-    /* Shadows and glows */
-    --glow-blue: 0 0 20px hsl(217 91% 60% / 0.5);
-    --glow-green: 0 0 20px hsl(120 80% 50% / 0.5);
-    --glow-purple: 0 0 20px hsl(270 100% 70% / 0.5);
-    --shadow-glass: 0 8px 32px hsl(220 25% 6% / 0.3);
+    /* Subtle effects */
+    --glow-blue: 0 0 20px hsl(210 100% 56% / 0.3);
+    --glow-green: 0 0 20px hsl(142 71% 45% / 0.3);
+    --glow-subtle: 0 0 15px hsl(213 100% 72% / 0.2);
+    --shadow-glass: 0 8px 32px hsl(222 20% 11% / 0.4);
     
     /* Glass morphism backdrop */
-    --glass-backdrop: blur(20px);
+    --glass-backdrop: blur(16px);
     
-    --radius: 1rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -104,7 +104,7 @@
     min-height: 100vh;
   }
   
-  /* Animated background particles */
+  /* Subtle professional background */
   body::before {
     content: '';
     position: fixed;
@@ -113,9 +113,9 @@
     right: 0;
     bottom: 0;
     background: 
-      radial-gradient(circle at 20% 80%, hsl(217 91% 60% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, hsl(270 100% 70% / 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, hsl(120 80% 50% / 0.05) 0%, transparent 50%);
+      radial-gradient(circle at 20% 80%, hsl(210 100% 56% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(213 100% 72% / 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(142 71% 45% / 0.02) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
   }
@@ -139,8 +139,8 @@
     box-shadow: var(--glow-green);
   }
   
-  .glow-purple {
-    box-shadow: var(--glow-purple);
+  .glow-subtle {
+    box-shadow: var(--glow-subtle);
   }
   
   .text-glow {
